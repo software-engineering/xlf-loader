@@ -1,0 +1,11 @@
+{
+	"name": "xlf-loader",
+	"version": "0.0.1",
+	"author": "Emanuel Schädler @emi",
+	"description": "xlf loader module for webpack",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:software-engineering/xlf-loader.git"
+	},
+	"license": "MIT"
+}
