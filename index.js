@@ -4,9 +4,9 @@
 */
 module.exports = function(content) {
     if (this.builder && this.transpiler) {
-        load.metadata.format = 'esm';
-        return 'exp' + 'ort var __useDefault = true; exp' + 'ort default ' + JSON.stringify(load.source) + ';';
+        content.metadata.format = 'esm';
+        return 'exp' + 'ort var __useDefault = true; exp' + 'ort default ' + JSON.stringify(content.source) + ';';
     }
-    load.metadata.format = 'amd';
-    return 'def' + 'ine(function() {\nreturn ' + JSON.stringify(load.source) + ';\n});';
+    content.metadata.format = 'amd';
+    return 'def' + 'ine(function() {\nreturn ' + JSON.stringify(content.source) + ';\n});';
 }
